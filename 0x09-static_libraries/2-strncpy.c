@@ -1,27 +1,27 @@
 #include "main.h"
 /**
- * _strncpy - copy a string
- * @dest: input value
- * @src: input value
- * @n: input value
+ * _strncpy: to  copy a string
+ * @dest: input value one
+ * @src: input value two
+ * @n: input value 
  *
  * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int j;
+	int silas;
 
 
-	j = 0;
-	while (j < n && src[j] != '\0')
+	silas = 0;
+	while (silas < n && src[silas] != '\0')
 	{
-		dest[j] = src[j];
-		j++;
+		dest[silas] = src[silas];
+		silas++;
 	}
-	while (j < n)
+	while (silas < n)
 	{
-		dest[j] = '\0';
-		j++;
+		dest[silas] = '\0';
+		silas++;
 	}
 
 

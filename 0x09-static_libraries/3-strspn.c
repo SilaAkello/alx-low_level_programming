@@ -1,34 +1,30 @@
 #include "main.h"
 /**
- * _strspn - Entry point
- * @s: input
+ * _strspn -This is  Entry point
+ * @s: input one
  * @accept: input
- * Return: Always 0 (Success)
+ * Return: 0 always on sucess)
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n = 0;
-	int r;
+	unsigned int y = 0;
+	int silas;
 
 
 	while (*s)
 	{
-		for (r = 0; accept[r]; r++)
+		for (silas = 0; accept[silas]; silas++)
 		{
-			if (*s == accept[r])
+			if (*s == accept[silas])
 			{
-				n++;
+				y++;
 				break;
 			}
-			else if (accept[r + 1] == '\0')
-				return (n);
+			else if (accept[silas + 1] == '\0')
+				return (y);
 		}
 		s++;
 	}
-	return (n);
+	return (y);
 }
- 
- 
- 
- 
 

@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strncat - concatenate two strings
+ * _strncat - function to concatenate two strings
  * using at most n bytes from src
- * @dest: input value
- * @src: input value
+ * @dest: This is the input value
+ * @src: This is another input value
  * @n: input value
  *
  * Return: dest
@@ -29,4 +29,5 @@ char *_strncat(char *dest, char *src, int n)
 	dest[i] = '\0';
 	return (dest);
 }
+ 
 

@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _strchr - Entry point
- * @s: input
- * @c: input
- * Return: Always 0 (Success)
+ * _strchr -  This is a function on Entry point
+ * @s: input one
+ * @c: input two
+ * Return: Always return 0 to show succees
  */
 char *_strchr(char *s, char c)
 {
@@ -17,4 +17,6 @@ char *_strchr(char *s, char c)
 	}
 	return (0);
 }
+
+
 

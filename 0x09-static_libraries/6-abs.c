@@ -2,18 +2,16 @@
 
 
 /**
- * _abs - computes the absolute value of an integer
- * @n: the int to check
+ * _abs: Function to  computes the absolute value of an integer
+ * @sila:  This is the int to check
  * Return: the absolute value of int
  */
-int _abs(int n)
+int _abs(int sila)
 {
-	if (n >= 0)
+	if (sila >= 0)
 	{
-		return (n);
+		return (sila);
 	}
-	return (-n);
+	return (-sila);
 }
- 
- 
 

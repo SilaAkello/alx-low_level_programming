@@ -2,15 +2,14 @@
 void _puts(char *str)
 #include<stdio.h>
 /**
- * main - Entry point
+ * main - This is the Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
+	puts("\"Programming is fun when you understand it otherwise it is the most dificult thing in the world");
 	return (0);
 }
- 
  
 
