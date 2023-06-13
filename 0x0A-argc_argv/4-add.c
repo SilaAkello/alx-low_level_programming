@@ -3,55 +3,55 @@
 #include <ctype.h>
 #include <string.h>
 /**
- * check_num - check - string there are digit
- * @str: array str
+ * check_num:check strings there are digits
+ * @str:magi koro e array
  *
- * Return: Always 0 (Success)
+ * Return:kila time toa 0 (Success)
  */
 int check_num(char *str)
 {
-	/*Declaring variables*/
-	unsigned int count;
+	
+	unsigned int counting;
 
-	count = 0;
-	while (count < strlen(str)) /*count string*/
+	counting = 0;
+	while (counting < strlen(str)) 
 
 	{
-		if (!isdigit(str[count])) /*check if str there are digit*/
+		if (!isdigit(str[counting]) )
 		{
 			return (0);
 		}
 
-		count++;
+		counting++;
 	}
 	return (1);
 }
 
 /**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
+ * main : to Print the name of the program
+ * @argcm to do the  Count on  arguments
+ * @argv: Arguments vectors
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 always to show success
  */
 
 int main(int argc, char *argv[])
 
 {
 
-	/*Declaring variables*/
-	int count;
-	int str_to_int;
-	int sum = 0;
 
-	count = 1;
-	while (count < argc) /*Goes through the whole array*/
+	int counting;
+	int strata_too_inta;
+	int hesabu = 0;
+
+	counting = 1;
+	while (counting < argc) /*Goes through the whole array*/
 	{
 		if (check_num(argv[count]))
 
 		{
-			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
-			sum += str_to_int;
+			strata_too_inta = atoi(argv[count]); /*ATOI --> convert string to int*/
+			hesabu += strata_too_inta;
 		}
 
 		/*Condition if one of the number contains symbols that are not digits*/
@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 
-		count++;
+		counting++;
 	}
 
 	printf("%d\n", sum); /*print sum*/
