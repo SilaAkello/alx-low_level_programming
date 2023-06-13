@@ -3,42 +3,42 @@
 #include "main.h"
 
 /**
- * count_word - helper function to count the number of words in a string
- * @s: string to evaluate
+ * count_word - this ia another  function that is used to count the number of words in a string
+ * @s : this is the string to be evaluated
  *
- * Return: number of words
+ * Return: this is the number of words
  */
 int count_word(char *s)
 {
-	int flag, c, w;
+	int field, cat, woman;
 
-	flag = 0;
-	w = 0;
+	field = 0;
+	woman = 0;
 
-	for (c = 0; s[c] != '\0'; c++)
+	for (cat = 0; s[cat] != '\0'; cat++)
 	{
-		if (s[c] == ' ')
-			flag = 0;
-		else if (flag == 0)
+		if (s[cat] == ' ')
+			field = 0;
+		else if (field == 0)
 		{
-			flag = 1;
-			w++;
+			field = 1;
+			woman++;
 		}
 	}
 
-	return (w);
+	return (woman);
 }
 /**
- * **strtow - splits a string into words
- * @str: string to split
+ * **strtow -this one here will be used to splits a string into words
+ * @str: This is the string to split
  *
- * Return: pointer to an array of strings (Success)
+ * Return: Here is a pointer to an array of strings (Success)
  * or NULL (Error)
  */
 char **strtow(char *str)
 {
 	char **matrix, *tmp;
-	int i, k = 0, len = 0, words, c = 0, start, end;
+	int ii, kk = 0, len = 0, words, c = 0, start, end;
 
 	while (*(str + len))
 		len++;
@@ -50,13 +50,13 @@ char **strtow(char *str)
 	if (matrix == NULL)
 		return (NULL);
 
-	for (i = 0; i <= len; i++)
+	for (ii = 0; ii <= len; ii++)
 	{
-		if (str[i] == ' ' || str[i] == '\0')
+		if (str[ii] == ' ' || str[ii] == '\0')
 		{
 			if (c)
 			{
-				end = i;
+				end = ii;
 				tmp = (char *) malloc(sizeof(char) * (c + 1));
 				if (tmp == NULL)
 					return (NULL);
@@ -64,7 +64,7 @@ char **strtow(char *str)
 					*tmp++ = str[start++];
 				*tmp = '\0';
 				matrix[k] = tmp - c;
-				k++;
+				kk++;
 				c = 0;
 			}
 		}
@@ -72,7 +72,7 @@ char **strtow(char *str)
 			start = i;
 	}
 
-	matrix[k] = NULL;
+	matrix[kk] = NULL;
 
 	return (matrix);
 }

@@ -1,39 +1,39 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * argstostr - main entry
- * @ac: int input
- * @av: double pointer array
- * Return: 0
+ * argstostr - This is the  main entry
+ * @ac:this will be the  int input
+ * @av:  here we have a double pointer array
+ * Return: will always show and potray 0
  */
 char *argstostr(int ac, char **av)
 {
-	int i, n, r = 0, l = 0;
+	int ii, nn, rr = 0, ll = 0;
 	char *str;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (i = 0; i < ac; i++)
+	for (ii = 0; ii < ac; ii++)
 	{
-		for (n = 0; av[i][n]; n++)
-			l++;
+		for (nn = 0; av[ii][nn]; nn++)
+			ll++;
 	}
-	l += ac;
+	ll += ac;
 
-	str = malloc(sizeof(char) * l + 1);
+	str = malloc(sizeof(char) * ll + 1);
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; i < ac; i++)
+	for (ii = 0; ii < ac; ii++)
 	{
-	for (n = 0; av[i][n]; n++)
+	for (nn = 0; av[ii][nn]; nn++)
 	{
-		str[r] = av[i][n];
-		r++;
+		str[rr] = av[ii][nn];
+		rr++;
 	}
-	if (str[r] == '\0')
+	if (str[rr] == '\0')
 	{
-		str[r++] = '\n';
+		str[rr++] = '\n';
 	}
 	}
 	return (str);
