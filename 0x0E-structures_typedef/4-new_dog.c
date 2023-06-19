@@ -2,10 +2,10 @@
 #include "dog.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: string to evaluate
+ * _strlen: this one here will returns the length of a string
+ * @s- this is the  string to evaluate
  *
- * Return: the length of the string
+ * Return- will do the honors of showing length of the string
  */
 int _strlen(char *s)
 {
